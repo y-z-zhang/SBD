@@ -4,16 +4,16 @@ This repository is part of the paper: Y. Zhang, V. Latora, and A. E. Motter, _Un
 It includes:
 1. sbd.m
 
-  Matlab implementation of the SBD algorithm.
+  _Matlab implementation of the SBD algorithm._
 
 2. sbd.py
 
-  Python implementation of the SBD algorithm.
+  _Python implementation of the SBD algorithm._
 
 3. demo.ipynb
 
-  Jupyter Notebook demonstrating the use of the SBD algorithm in analyzing networks with higher-order interactions.
+  _Jupyter Notebook demonstrating the use of the SBD algorithm in analyzing networks with higher-order interactions._
 
 4. bn-macaque-rhesus_brain_2.edges
 
-  The macaque brain connectome data used in demo.ipynb.
+  _The macaque brain connectome data used in demo.ipynb._
