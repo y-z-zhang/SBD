@@ -22,7 +22,7 @@
 %%%%%%%%%%
 %REFERENCE
 %%%%%%%%%%
-%% Y. Zhang, V. Latora, and A. E. Motter, "Unified Treatment of Dynamical Processes on Higher-order, Multilayer, and Temporal Networks"
+%% Y. Zhang, V. Latora, and A. E. Motter, "Unified Treatment of Dynamical Processes on Generalized Networks: Higher-order, Multilayer, and Temporal Interactions"
 
 function [P,BlockSizes] = sbd(A,field,threshold)
 
@@ -71,7 +71,7 @@ function [P,BlockSizes] = sbd(A,field,threshold)
     BlockSizes = [BlockSizes,current_block_size];
   end
 
-%% the sorted base vectors give the final orthogonal/unitary transformation matrix that performs SBD on A
-P = V(:,sorted_basis);
+  %% the sorted base vectors give the final orthogonal/unitary transformation matrix that performs SBD on A
+  P = V(:,sorted_basis);
 
 end
