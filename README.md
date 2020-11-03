@@ -7,10 +7,10 @@ The algorithm works by finding the eigendecomposition of a single matrix, which 
 
 The repository includes:
 
-1. sbd.py
+1. `sbd.py`
 
   _Python implementation of the SBD algorithm._
 
-2. sbd.m
+2. `sbd.m`
 
   _MATLAB implementation of the SBD algorithm._
