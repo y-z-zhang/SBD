@@ -28,7 +28,7 @@ def sbd(A,threshold):
 		B = B + np.random.normal()*(A[p]+A[p].transpose())
 
     # find the eigenvalues and eigenvectors of B
-	D, V = la.eig(B)
+	D, V = la.eigh(B)
 
     # C is a matrix used to sort the column vectors of V (i.e., the base vectors)
     # such that the base vectors corresponding to the same common block are next to each other
