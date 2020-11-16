@@ -56,6 +56,21 @@ def sbd(A,threshold):
 		for idx in current_block:
 			sorted_basis.append(idx)
 			remaining_basis.remove(idx)
+
+		# do the following in case there are zero entries inside the block
+		current_block_extra = []
+		if len(remaining_basis) > 0:
+			for idx in remaining_basis:
+				for ind in current_block:
+					if np.abs(C[ind,idx]) > threshold:
+						current_block_extra.append(idx)
+						current_block_size = current_block_size + 1
+						break
+
+		for idx in current_block_extra:
+			sorted_basis.append(idx)
+			remaining_basis.remove(idx)
+
 		BlockSizes.append(current_block_size)
 
     # the sorted base vectors give the final orthogonal/unitary transformation matrix that performs SBD on A
