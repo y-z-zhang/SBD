@@ -14,3 +14,5 @@ The repository includes:
 2. `sbd.m`
 
   _MATLAB implementation of the SBD algorithm._
+
+For an application of the SBD code, see [this](https://github.com/asalova/hypergraph-cluster-sync) nice Python package developed by A. Salova, which provides a unified treatment of cluster synchronization on hypergraphs.
