@@ -4,8 +4,7 @@ from scipy.linalg import block_diag
 from scipy.stats import ortho_group
 
 ############### PURPOSE #################
-# This code finds the finest simultaneous block diagonalization (SBD) of a set of symmetric matrices A.
-# It also works for non-symmetric matrices, in such cases the SBD is the finest in the sense of matrix *-algebra.
+# This code finds a simultaneous block diagonalization (SBD) of a set of symmetric matrices A.
 
 ############### USEAGE #################
 # [P,BlockSizes] = sbd(A,threshold)
@@ -15,7 +14,7 @@ from scipy.stats import ortho_group
 # BlockSizes --- array listing the size of each common block
 
 ############### REFERENCE #################
-# Y. Zhang, V. Latora, and A. E. Motter, "Unified Treatment of Dynamical Processes on Generalized Networks: Higher-order, Multilayer, and Temporal Interactions"
+# Y. Zhang, V. Latora, and A. E. Motter, Unified treatment of synchronization patterns in generalized networks with higher-order, multilayer, and temporal interactions, Commun. Phys. 4, 195 (2021).
 
 def sbd(A,threshold):
 	n = len(A[0])	# size of the matrices to be simultaneously block diagonalized
