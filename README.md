@@ -1,9 +1,10 @@
 # SBD: Simultaneous Block Diagonalization of noncommuting matrices
 
-This repository is part of the paper: Y. Zhang, V. Latora, and A. E. Motter, _Unified treatment of synchronization patterns in generalized networks with higher-order, multilayer, and temporal interactions_, [arXiv:2010.00613](https://arxiv.org/abs/2010.00613).
+This repository is part of the paper: Y. Zhang, V. Latora, and A. E. Motter, _Unified treatment of synchronization patterns in generalized networks with higher-order, multilayer, and temporal interactions_, [Commun. Phys. 4, 195 (2021)](https://doi.org/10.1038/s42005-021-00695-0).
 
 SBD is a simple and efficient algorithm for finding a (often finest) simultaneous block diagonalization of multiple matrices.
 The algorithm works by finding the eigendecomposition of a _single_ matrix, which is a random linear combination of all the matrices to be simultaneously block diagonalized.
+The current algorithm is inspired by the results presented in K. Murota et al. Jpn. J. Ind. Appl. Math 27, 125–160 (2010).
 
 The repository includes:
 
