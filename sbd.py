@@ -4,7 +4,11 @@ from scipy.linalg import block_diag
 from scipy.stats import ortho_group
 
 ############### PURPOSE #################
-# This code finds a simultaneous block diagonalization (SBD) of a set of symmetric matrices A.
+# SBD is a simple and efficient algorithm for finding a (often finest) simultaneous block diagonalization of an arbitrary number of symmetric matrices.
+# The algorithm works by finding the eigendecomposition of a single matrix, which is a random linear combination of all the matrices to be simultaneously block diagonalized.
+# The current algorithm is inspired by the results presented in K. Murota et al. Jpn. J. Ind. Appl. Math 27, 125–160 (2010).
+# For an efficient algorithm that also guarantees the optimal SBD, see https://github.com/y-z-zhang/net-sync-sym.
+# There, you can also find concrete examples on how the SBD algorithm can be applied to analyze cluster synchronization patterns in complex networks.
 
 ############### USEAGE #################
 # [P,BlockSizes] = sbd(A,threshold)
@@ -14,7 +18,9 @@ from scipy.stats import ortho_group
 # BlockSizes --- array listing the size of each common block
 
 ############### REFERENCE #################
-# Y. Zhang, V. Latora, and A. E. Motter, Unified treatment of synchronization patterns in generalized networks with higher-order, multilayer, and temporal interactions, Commun. Phys. 4, 195 (2021).
+# Y. Zhang, V. Latora, and A. E. Motter,
+# Unified treatment of synchronization patterns in generalized networks with higher-order, multilayer, and temporal interactions,
+# Commun. Phys. 4, 195 (2021).
 
 def sbd(A,threshold):
 	n = len(A[0])	# size of the matrices to be simultaneously block diagonalized
